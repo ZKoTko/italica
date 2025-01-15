@@ -8,9 +8,20 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="style.css">
+    <style>
+        .banner {
+            background-image: url('assets/img/banner.svg');
+        }
+        @media (max-width: 768px) {
+            .banner {
+                background-image: url('assets/img/banner-mob.svg');
+            }
+        }
+    </style>
   </head>
   <body>
     <!-- Content -->
+    <div class="page-filter"></div>
     <!--Head-->
     <head>
         <!--Nav-->
@@ -25,6 +36,11 @@
                                 </button>      
                                 <input type="text" placeholder="Search">
                             </form>
+                        </div>
+                        <div class="nav-burger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
                         </div>
                     </div>
                     <div class="col top-nav-logo-wrapper">
@@ -87,12 +103,127 @@
                 </div>
             </div>
         </div>
+        <!--MobNav-->
+        <div class="mob-nav">
+            <div class="mob-nav-wrapper">
+                <div class="mob-nav-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="none" viewBox="0 0 42 42">
+                        <path fill="#151515" d="M33.25 11.217 30.782 8.75 21 18.532 11.217 8.75 8.75 11.217 18.532 21 8.75 30.782l2.467 2.468L21 23.468l9.782 9.782 2.468-2.468L23.468 21l9.782-9.783Z"/>
+                    </svg>                      
+                </div>
+                <div class="mob-nav-buttons">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+                            <path fill="#323232" stroke="#323232" stroke-width=".8" d="M16.693 17.325c.383.383.975-.209.591-.584l-3.125-3.133a6.583 6.583 0 0 0 1.7-4.425A6.64 6.64 0 0 0 9.226 2.55a6.64 6.64 0 0 0-6.633 6.633 6.64 6.64 0 0 0 6.633 6.633c1.65 0 3.175-.608 4.342-1.616l3.125 3.125ZM3.425 9.183c0-3.2 2.609-5.8 5.8-5.8 3.2 0 5.8 2.6 5.8 5.8 0 3.2-2.6 5.8-5.8 5.8a5.81 5.81 0 0 1-5.8-5.8Z"/>
+                        </svg>                          
+                    </a>
+                    <a href="#">
+                        <img src="assets/img/language.svg" alt="language">
+                    </a>
+                    <a href="#">
+                        <img src="assets/img/Profile.svg" alt="profile">
+                    </a>
+                </div>
+                <div class="mob-nav-items">
+                    <div class="mob-nav-item">
+                        <div class="mob-nav-item-main">
+                            <a href="#">Tops</a>
+                            <svg class="mob-nav-item-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path fill="#323232" d="m11.925 8.73-8.34 8.49-1.335-1.305 8.385-8.565a1.771 1.771 0 0 1 1.29-.585 1.695 1.695 0 0 1 1.275.585l8.55 8.55-1.32 1.335-8.505-8.505Z"/>
+                            </svg> 
+                        </div>
+                        <div class="mob-nav-item-dropdown">
+                            <a href="#">Tops</a>
+                            <a href="#">Tops</a>
+                            <a href="#">Tops</a>
+                        </div>                               
+                    </div>
+                    <div class="mob-nav-item">
+                        <div class="mob-nav-item-main">
+                            <a href="#">Knitwear</a>
+                            <svg class="mob-nav-item-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path fill="#323232" d="m11.925 8.73-8.34 8.49-1.335-1.305 8.385-8.565a1.771 1.771 0 0 1 1.29-.585 1.695 1.695 0 0 1 1.275.585l8.55 8.55-1.32 1.335-8.505-8.505Z"/>
+                            </svg> 
+                        </div>
+                        <div class="mob-nav-item-dropdown">
+                            <a href="#">Knitwear</a>
+                            <a href="#">Knitwear</a>
+                            <a href="#">Knitwear</a>
+                        </div>                               
+                    </div>
+                    <div class="mob-nav-item">
+                        <div class="mob-nav-item-main">
+                            <a href="#">Denim</a>
+                            <svg class="mob-nav-item-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path fill="#323232" d="m11.925 8.73-8.34 8.49-1.335-1.305 8.385-8.565a1.771 1.771 0 0 1 1.29-.585 1.695 1.695 0 0 1 1.275.585l8.55 8.55-1.32 1.335-8.505-8.505Z"/>
+                            </svg> 
+                        </div>
+                        <div class="mob-nav-item-dropdown">
+                            <a href="#">Denim</a>
+                            <a href="#">Denim</a>
+                            <a href="#">Denim</a>
+                        </div>                               
+                    </div>
+                    <div class="mob-nav-item">
+                        <div class="mob-nav-item-main">
+                            <a href="#">Sets</a>
+                            <svg class="mob-nav-item-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path fill="#323232" d="m11.925 8.73-8.34 8.49-1.335-1.305 8.385-8.565a1.771 1.771 0 0 1 1.29-.585 1.695 1.695 0 0 1 1.275.585l8.55 8.55-1.32 1.335-8.505-8.505Z"/>
+                            </svg> 
+                        </div>
+                        <div class="mob-nav-item-dropdown">
+                            <a href="#">Sets</a>
+                            <a href="#">Sets</a>
+                            <a href="#">Sets</a>
+                        </div>                               
+                    </div>
+                    <div class="mob-nav-item">
+                        <div class="mob-nav-item-main">
+                            <a href="#">Accessories</a>
+                            <svg class="mob-nav-item-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path fill="#323232" d="m11.925 8.73-8.34 8.49-1.335-1.305 8.385-8.565a1.771 1.771 0 0 1 1.29-.585 1.695 1.695 0 0 1 1.275.585l8.55 8.55-1.32 1.335-8.505-8.505Z"/>
+                            </svg> 
+                        </div>
+                        <div class="mob-nav-item-dropdown">
+                            <a href="#">Accessories</a>
+                            <a href="#">Accessories</a>
+                            <a href="#">Accessories</a>
+                        </div>                               
+                    </div>
+                    <div class="mob-nav-item">
+                        <div class="mob-nav-item-main">
+                            <a href="#">Bags</a>
+                            <svg class="mob-nav-item-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path fill="#323232" d="m11.925 8.73-8.34 8.49-1.335-1.305 8.385-8.565a1.771 1.771 0 0 1 1.29-.585 1.695 1.695 0 0 1 1.275.585l8.55 8.55-1.32 1.335-8.505-8.505Z"/>
+                            </svg> 
+                        </div>
+                        <div class="mob-nav-item-dropdown">
+                            <a href="#">Bags</a>
+                            <a href="#">Bags</a>
+                            <a href="#">Bags</a>
+                        </div>                               
+                    </div>
+                    <div class="mob-nav-item">
+                        <div class="mob-nav-item-main">
+                            <a href="#" class="colored">Sale</a>
+                            <svg class="mob-nav-item-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path fill="#323232" d="m11.925 8.73-8.34 8.49-1.335-1.305 8.385-8.565a1.771 1.771 0 0 1 1.29-.585 1.695 1.695 0 0 1 1.275.585l8.55 8.55-1.32 1.335-8.505-8.505Z"/>
+                            </svg> 
+                        </div>
+                        <div class="mob-nav-item-dropdown">
+                            <a href="#">Sale</a>
+                            <a href="#">Sale</a>
+                            <a href="#">Sale</a>
+                        </div>                               
+                    </div>
+                </div>
+            </div>
+        </div>
     </head>
     <!--Main-->
     <main>
         <!--Banner-->
-        <section class="banner"
-        style="background-image: url('assets/img/banner.svg');">
+        <section class="banner">
             <div class="container">
                 <div class="banner-content">
                     <a href="#">
@@ -166,30 +297,52 @@
         <!--Blocks-->
         <section class="blocks">
             <div class="blocks-item row">
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                     <div class="blocks-text">
                         <h2>NEW IN</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis</p>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                     <div class="blocks-image"
                     style="background: url(assets/img/block1.svg);">
                     </div>
                 </div>
             </div>
             <div class="blocks-item row">
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                     <div class="blocks-image"
                     style="background: url(assets/img/block2.svg);">
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                     <div class="blocks-text">
                         <h2>BEST <br> SELLERS</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis</p>
                     </div>
                 </div>     
+            </div>
+        </section>
+        <!--Blocks-MOB-->
+        <section class="blocks-mob">
+            <div class="block-mob-img" style="background: url(assets/img/block1-mob.svg);">
+                <a href="#">
+                    <button class="block-mob-btn">
+                        NEW IN
+                    </button>
+                </a>
+            </div>
+            <div class="block-mob-text">
+                <div class="container">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis</p>
+                </div>
+            </div>
+            <div class="block-mob-img" style="background: url(assets/img/block2-mob.svg);">
+                <a href="#">
+                    <button class="block-mob-btn">
+                        BEST SELLERS
+                    </button>
+                </a>
             </div>
         </section>
         <!--Season-->
@@ -361,7 +514,7 @@
                         </div>
                     </div>
                     <div class="col-xl-4">
-                        <div class="info-item">
+                        <div class="info-item" style="border: none;">
                             <h3>Shipping</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis</p>
                         </div>  
@@ -379,21 +532,21 @@
                     <p>We have clothes that suits your style and which you’re proud to wear for women.</p>
                     <div class="footer-buttons">
                         <a href="#">
-                            <div class="footer-button">
+                            <div class="footer-button footer-btn-1">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15" fill="none" viewBox="0 0 18 15">
                                     <path fill="#323232" d="M17.312 2.474a7.654 7.654 0 0 1-1.99.558c.698-.419 1.256-1.082 1.5-1.885a7.566 7.566 0 0 1-2.2.838A3.48 3.48 0 0 0 12.11.902a3.428 3.428 0 0 0-3.422 3.422c0 .28.035.524.105.769a9.784 9.784 0 0 1-7.089-3.597c-.28.524-.454 1.082-.454 1.711A3.42 3.42 0 0 0 2.786 6.07a4.04 4.04 0 0 1-1.572-.419v.035a3.45 3.45 0 0 0 2.759 3.387c-.28.07-.594.105-.908.105-.21 0-.454-.035-.664-.07.454 1.362 1.711 2.375 3.213 2.375-1.187.907-2.654 1.466-4.26 1.466-.28 0-.559 0-.803-.035a9.717 9.717 0 0 0 5.272 1.537c6.32 0 9.778-5.238 9.778-9.777V4.22a6.272 6.272 0 0 0 1.71-1.746Z"/>
                                 </svg>  
                             </div>                         
                         </a>
                         <a href="#">
-                            <div class="footer-button">
+                            <div class="footer-button footer-btn-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="11" height="19" fill="none" viewBox="0 0 11 19">
                                     <path fill="#323232" d="M3.708 18.318v-8.293H.917V6.793h2.79V4.41c0-2.766 1.69-4.272 4.157-4.272 1.182 0 2.198.088 2.494.127v2.89l-1.711.001c-1.342 0-1.602.638-1.602 1.574v2.063h3.2l-.416 3.232H7.045v8.293H3.708Z"/>
                                 </svg>  
                             </div>                                
                         </a>
                         <a href="#">
-                            <div class="footer-button">
+                            <div class="footer-button footer-btn-3">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" fill="none" viewBox="0 0 21 22">
                                     <path fill="#323232" d="M10.462 2.67c2.713 0 3.034.011 4.106.06a5.637 5.637 0 0 1 1.887.35 3.364 3.364 0 0 1 1.929 1.928c.224.605.342 1.243.35 1.887.048 1.072.059 1.394.059 4.107s-.01 3.034-.06 4.106a5.635 5.635 0 0 1-.349 1.887 3.364 3.364 0 0 1-1.929 1.929 5.638 5.638 0 0 1-1.887.35c-1.071.048-1.392.058-4.106.058-2.713 0-3.035-.01-4.106-.059a5.638 5.638 0 0 1-1.887-.35 3.366 3.366 0 0 1-1.929-1.928 5.636 5.636 0 0 1-.35-1.887c-.048-1.072-.059-1.393-.059-4.106s.01-3.035.06-4.107a5.637 5.637 0 0 1 .35-1.887A3.365 3.365 0 0 1 4.468 3.08a5.637 5.637 0 0 1 1.887-.35c1.072-.049 1.393-.06 4.106-.06Zm0-1.83c-2.758 0-3.105.01-4.19.06a7.46 7.46 0 0 0-2.467.473 4.977 4.977 0 0 0-1.799 1.172 4.978 4.978 0 0 0-1.173 1.8 7.46 7.46 0 0 0-.472 2.468C.312 7.896.3 8.243.3 11s.011 3.106.06 4.19a7.46 7.46 0 0 0 .473 2.467 4.977 4.977 0 0 0 1.172 1.8 4.978 4.978 0 0 0 1.8 1.172 7.46 7.46 0 0 0 2.468.472c1.084.049 1.43.061 4.189.061 2.76 0 3.106-.011 4.19-.06a7.46 7.46 0 0 0 2.467-.473 5.202 5.202 0 0 0 2.971-2.973c.296-.79.456-1.624.472-2.467.049-1.083.06-1.43.06-4.189 0-2.758-.011-3.105-.06-4.19a7.46 7.46 0 0 0-.473-2.467 4.978 4.978 0 0 0-1.172-1.8 4.978 4.978 0 0 0-1.8-1.172A7.46 7.46 0 0 0 14.651.9C13.567.85 13.22.84 10.461.84Z"/>
                                     <path fill="#323232" d="M10.464 5.785a5.218 5.218 0 1 0 0 10.436 5.218 5.218 0 0 0 0-10.436Zm0 8.605a3.387 3.387 0 1 1 0-6.774 3.387 3.387 0 0 1 0 6.774Zm5.423-7.593a1.22 1.22 0 1 0 0-2.439 1.22 1.22 0 0 0 0 2.44Z"/>
@@ -455,5 +608,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/sliders.js"></script>
+    <script src="assets/js/nav.js"></script>
 </body>
 </html>

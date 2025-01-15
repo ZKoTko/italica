@@ -13,6 +13,21 @@ $('.products-slider').slick({
             slidesToShow: 3
           }
         },
+        {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 2
+            }
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            dots: true,
+            customPaging: function (slider, i) {
+              return '<button class="custom-dot" data-slide="' + i + '">' + '</button>';
+            }
+          }
+        },
     ]
 });
 
@@ -23,7 +38,24 @@ $('.season-slider').slick({
     infinite: true,
     slidesToShow: 3, 
     variableWidth: true,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 2
+            }
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            dots: true,
+            customPaging: function (slider, i) {
+              return '<button class="custom-dot" data-slide="' + i + '">' + '</button>';
+            }
+          }
+        },
+    ]
 });
 
 $('.sales-slider').slick({
@@ -41,6 +73,22 @@ $('.sales-slider').slick({
             slidesToShow: 3
           }
         },
+        {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 2
+            }
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            dots: true,
+            customPaging: function (slider, i) {
+              return '<button class="custom-dot" data-slide="' + i + '">' + '</button>';
+            }
+          }
+        },
     ]
+    
 });
 
