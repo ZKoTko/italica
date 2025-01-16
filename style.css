@@ -159,6 +159,7 @@ body.no-scroll {
 .top-nav-buttons-wrapper {
     display: flex;
     justify-content: flex-end;
+    position: relative;
 }
 .top-nav-buttons {
     display: flex;
@@ -198,6 +199,10 @@ body.no-scroll {
     font-weight: 700;
     color: #323232;
     font-size: 20px;
+    transition: .3s;
+}
+.cat-nav-item a:hover {
+    color: #69110A;
 }
 .cat-nav-item.colored a{
     color: #69110A;
@@ -262,10 +267,43 @@ body.no-scroll {
 .mob-nav-buttons {
     display: flex;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 .mob-nav-buttons a {
     text-decoration: none;
+    margin-right: 20px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #fff;
+}
+.mob-lang-changer {
+    padding-bottom: 4px;
+    position: relative;
+    border-bottom: 1px solid #fff;
+}
+.mob-search form {
+    display: flex;
+}
+.mob-search form input {
+    width: 100px;
+    margin-left: 8px;
+    border: 0;
+    outline: 0;
+    font-size: 13px;
+    border-bottom: 1px solid #A4A4A4;
+    transform: translateY(4px);
+}
+.mob-search-input {
+    display: none;
+}
+.mob-search-input.active {
+    display: block;
+}
+.mob-search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 4px;
     margin-right: 20px;
 }
 .mob-nav-item-dropdown {
@@ -297,6 +335,76 @@ body.no-scroll {
 }
 .mob-nav-item-arrow.active {
     transform: rotate(180deg);
+}
+
+.languages-dropdown {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: -50px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+.languages-dropdown-item-img{
+    width: 20px !important;
+    height: 20px !important;
+    margin: 0px !important;
+    margin-right: 4px !important;
+}
+.languages-dropdown a {
+    text-decoration: none;
+    background: transparent !important;
+}
+.languages-dropdown-item {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    color: #323232;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+}
+.lang-changer {
+    transition: .3s;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.lang-changer:hover .languages-dropdown{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: unset;
+}
+.lang-changer:hover  {
+    background: #F4F4F4;
+}
+.mob-lang-changer {
+    margin-right: 20px;
+}
+.mob-lang-changer.active {
+    border-bottom: 1px solid #323232;
+}
+.mob-lang-changer.active .languages-dropdown{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: unset;
+    bottom: -52px;
+}
+.mob-lang-changer .languages-dropdown-item {
+    margin-bottom: 2px;
+}
+.mob-lang-changer .languages-dropdown-item-img {
+    width: 13px !important;
+    height: 13px !important;
+}
+.languages-dropdown a {
+    padding-bottom: 0;
+}
+.mob-search button{
+    border: 0;
+    outline: 0;
+    background: transparent;
+    padding: 0;
 }
 /*Banner*/
 .banner {
@@ -681,11 +789,15 @@ body.no-scroll {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 0 !important;
     outline: 0 !important;
     color: #323232;
+    border: 3px solid #fff;
+    transition: .3s;
 }
-
+.offer-form-btn:hover {
+    background: #323232;
+    color: #fff;
+}
 /*Sales*/
 .sales {
     margin-bottom: 108px;
@@ -1270,11 +1382,19 @@ footer {
     .info {
         margin-bottom: 0;
     }
+    .lang-changer {
+        display: none;
+    }
 }
 @media (max-width: 768px) {
     .container  {
         max-width: 100%;
         padding: 0 14px;
+    }
+    .season-slider {
+        padding: 0px;
+        width: 332px;
+        margin: 0 auto;
     }
     .top-nav {
         margin-bottom: 24px;
@@ -1296,7 +1416,7 @@ footer {
     }
     .products-slide-image {
         min-width: 162px;
-        height: 246px;
+        height: 195px;
     }
     .products-slider {
         max-width: 332px;
@@ -1311,7 +1431,7 @@ footer {
     }
     .sales-slide-image {
         min-width: 162px;
-        height: 246px;
+        height: 195px;
     }
     .products-slide h3 {
         font-size: 14px;

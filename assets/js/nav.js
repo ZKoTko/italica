@@ -55,7 +55,36 @@ document.querySelectorAll('.mob-nav-item-arrow').forEach(arrow => {
       }
     });
 });
-  
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const langChanger = document.querySelector(".mob-lang-changer");
+
+  langChanger.addEventListener("click", () => {
+    langChanger.classList.toggle("active");
+  });
+});
+
+
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const searchInput = document.querySelector(".mob-search-input");
+    const searchButton = document.querySelector(".mob-search-btn");
+    const form = document.querySelector("#searchForm");
+
+    searchButton.addEventListener("click", (event) => {
+      // Если у инпута нет класса "active", добавляем его и отменяем отправку формы
+      if (!searchInput.classList.contains("active")) {
+        event.preventDefault();
+        searchInput.classList.add("active");
+      } else {
+        // Если класс "active" уже есть, позволяем форме отправляться
+        form.submit();
+      }
+    });
+  });
+
+
   
   
   
