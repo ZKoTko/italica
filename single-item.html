@@ -1,0 +1,810 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Italica</title>
+    <!-- Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/item.css">
+  </head>
+  <body>
+    <!-- Content -->
+    <div class="page-filter"></div>
+    <!--Head-->
+    <head>
+        <!--Nav-->
+        <nav class="top-nav">
+            <div class="container">
+                <div class="top-nav-wrapper row">
+                    <div class="col">
+                        <div class="top-nav-search">                     
+                            <form action="#">
+                                <button type="submit" class="nav-search-btn">
+                                    <img src="assets/img/circum_search.svg" alt="loop" type="submit">
+                                </button>      
+                                <input type="text" placeholder="Search">
+                            </form>
+                        </div>
+                        <div class="nav-burger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="col top-nav-logo-wrapper">
+                        <div class="top-nav-logo">
+                            <a href="#">
+                                <img src="assets/img/logo.svg" alt="logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col top-nav-buttons-wrapper">
+                        <div class="top-nav-buttons">
+                            <div href="#" class="lang-changer">
+                                <img class="lang-changer-planet"
+                                src="assets/img/language.svg" alt="language">
+                                <div class="languages-dropdown">
+                                    <a href="#">
+                                        <div class="languages-dropdown-item">
+                                            <img class="languages-dropdown-item-img"
+                                            src="assets/img/eng-flag.svg" alt="flag">
+                                            eng
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="languages-dropdown-item">
+                                            <img class="languages-dropdown-item-img"
+                                            src="assets/img/span-flag.svg" alt="flag">
+                                            span
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <a href="#">
+                                <img src="assets/img/Profile.svg" alt="profile">
+                            </a>
+                            <a href="#">
+                                <img src="assets/img/heart.svg" alt="heart">
+                            </a>
+                            <a href="#">
+                                <img src="assets/img/cart.svg" alt="cart">
+                            </a>        
+                        </div>
+                    </div>       
+                </div>
+            </div>
+        </nav>
+        <!--Cat-Nav-->
+        <div class="cat-nav">
+            <div class="container">
+                <div class="cat-nav-wrapper">
+                    <div class="cat-nav-item">
+                        <a href="#">Dresses</a>
+                    </div>
+                    <div class="cat-nav-item">
+                        <a href="#">Tops</a>
+                    </div>
+                    <div class="cat-nav-item">
+                        <a href="#">BOTTOMS</a>
+                    </div>
+                    <div class="cat-nav-item">
+                        <a href="#">KNitwear</a>
+                    </div>
+                    <div class="cat-nav-item">
+                        <a href="#">denim</a>
+                    </div>
+                    <div class="cat-nav-item">
+                        <a href="#">Sets</a>
+                    </div>
+                    <div class="cat-nav-item">
+                        <a href="#">bags</a>
+                    </div>
+                    <div class="cat-nav-item">
+                        <a href="#">Accessories</a>
+                    </div>
+                    <div class="cat-nav-item colored">
+                        <a href="#">SALE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--MobNav-->
+        <div class="mob-nav">
+            <div class="mob-nav-wrapper">
+                <div class="mob-nav-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="none" viewBox="0 0 42 42">
+                        <path fill="#151515" d="M33.25 11.217 30.782 8.75 21 18.532 11.217 8.75 8.75 11.217 18.532 21 8.75 30.782l2.467 2.468L21 23.468l9.782 9.782 2.468-2.468L23.468 21l9.782-9.783Z"/>
+                    </svg>                      
+                </div>
+                <div class="mob-nav-buttons">
+                    <div href="#" class="mob-search">
+                        <form>
+                            <button type="submit" class="mob-search-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+                                    <path fill="#323232" stroke="#323232" stroke-width=".8" d="M16.693 17.325c.383.383.975-.209.591-.584l-3.125-3.133a6.583 6.583 0 0 0 1.7-4.425A6.64 6.64 0 0 0 9.226 2.55a6.64 6.64 0 0 0-6.633 6.633 6.64 6.64 0 0 0 6.633 6.633c1.65 0 3.175-.608 4.342-1.616l3.125 3.125ZM3.425 9.183c0-3.2 2.609-5.8 5.8-5.8 3.2 0 5.8 2.6 5.8 5.8 0 3.2-2.6 5.8-5.8 5.8a5.81 5.81 0 0 1-5.8-5.8Z"/>
+                                </svg>
+                            </button> 
+                            <input type="text" class="mob-search-input" placeholder="Search">
+                        </form>                                              
+                    </div>
+                    <div href="#" class="mob-lang-changer">
+                        <img src="assets/img/language.svg" alt="language">
+                        <div class="languages-dropdown">
+                            <a href="#">
+                                <div class="languages-dropdown-item">
+                                    <img class="languages-dropdown-item-img"
+                                    src="assets/img/eng-flag.svg" alt="flag">
+                                    eng
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="languages-dropdown-item">
+                                    <img class="languages-dropdown-item-img"
+                                    src="assets/img/span-flag.svg" alt="flag">
+                                    span
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#">
+                        <img src="assets/img/Profile.svg" alt="profile">
+                    </a>
+                </div>
+                <div class="mob-nav-items">
+                    <div class="mob-nav-item">
+                        <div class="mob-nav-item-main">
+                            <a href="#">Tops</a>
+                            <svg class="mob-nav-item-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path fill="#323232" d="m11.925 8.73-8.34 8.49-1.335-1.305 8.385-8.565a1.771 1.771 0 0 1 1.29-.585 1.695 1.695 0 0 1 1.275.585l8.55 8.55-1.32 1.335-8.505-8.505Z"/>
+                            </svg> 
+                        </div>
+                        <div class="mob-nav-item-dropdown">
+                            <a href="#">Tops</a>
+                            <a href="#">Tops</a>
+                            <a href="#">Tops</a>
+                        </div>                               
+                    </div>
+                    <div class="mob-nav-item">
+                        <div class="mob-nav-item-main">
+                            <a href="#">Knitwear</a>
+                            <svg class="mob-nav-item-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path fill="#323232" d="m11.925 8.73-8.34 8.49-1.335-1.305 8.385-8.565a1.771 1.771 0 0 1 1.29-.585 1.695 1.695 0 0 1 1.275.585l8.55 8.55-1.32 1.335-8.505-8.505Z"/>
+                            </svg> 
+                        </div>
+                        <div class="mob-nav-item-dropdown">
+                            <a href="#">Knitwear</a>
+                            <a href="#">Knitwear</a>
+                            <a href="#">Knitwear</a>
+                        </div>                               
+                    </div>
+                    <div class="mob-nav-item">
+                        <div class="mob-nav-item-main">
+                            <a href="#">Denim</a>
+                            <svg class="mob-nav-item-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path fill="#323232" d="m11.925 8.73-8.34 8.49-1.335-1.305 8.385-8.565a1.771 1.771 0 0 1 1.29-.585 1.695 1.695 0 0 1 1.275.585l8.55 8.55-1.32 1.335-8.505-8.505Z"/>
+                            </svg> 
+                        </div>
+                        <div class="mob-nav-item-dropdown">
+                            <a href="#">Denim</a>
+                            <a href="#">Denim</a>
+                            <a href="#">Denim</a>
+                        </div>                               
+                    </div>
+                    <div class="mob-nav-item">
+                        <div class="mob-nav-item-main">
+                            <a href="#">Sets</a>
+                            <svg class="mob-nav-item-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path fill="#323232" d="m11.925 8.73-8.34 8.49-1.335-1.305 8.385-8.565a1.771 1.771 0 0 1 1.29-.585 1.695 1.695 0 0 1 1.275.585l8.55 8.55-1.32 1.335-8.505-8.505Z"/>
+                            </svg> 
+                        </div>
+                        <div class="mob-nav-item-dropdown">
+                            <a href="#">Sets</a>
+                            <a href="#">Sets</a>
+                            <a href="#">Sets</a>
+                        </div>                               
+                    </div>
+                    <div class="mob-nav-item">
+                        <div class="mob-nav-item-main">
+                            <a href="#">Accessories</a>
+                            <svg class="mob-nav-item-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path fill="#323232" d="m11.925 8.73-8.34 8.49-1.335-1.305 8.385-8.565a1.771 1.771 0 0 1 1.29-.585 1.695 1.695 0 0 1 1.275.585l8.55 8.55-1.32 1.335-8.505-8.505Z"/>
+                            </svg> 
+                        </div>
+                        <div class="mob-nav-item-dropdown">
+                            <a href="#">Accessories</a>
+                            <a href="#">Accessories</a>
+                            <a href="#">Accessories</a>
+                        </div>                               
+                    </div>
+                    <div class="mob-nav-item">
+                        <div class="mob-nav-item-main">
+                            <a href="#">Bags</a>
+                            <svg class="mob-nav-item-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path fill="#323232" d="m11.925 8.73-8.34 8.49-1.335-1.305 8.385-8.565a1.771 1.771 0 0 1 1.29-.585 1.695 1.695 0 0 1 1.275.585l8.55 8.55-1.32 1.335-8.505-8.505Z"/>
+                            </svg> 
+                        </div>
+                        <div class="mob-nav-item-dropdown">
+                            <a href="#">Bags</a>
+                            <a href="#">Bags</a>
+                            <a href="#">Bags</a>
+                        </div>                               
+                    </div>
+                    <div class="mob-nav-item">
+                        <div class="mob-nav-item-main">
+                            <a href="#" class="colored">Sale</a>
+                            <svg class="mob-nav-item-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path fill="#323232" d="m11.925 8.73-8.34 8.49-1.335-1.305 8.385-8.565a1.771 1.771 0 0 1 1.29-.585 1.695 1.695 0 0 1 1.275.585l8.55 8.55-1.32 1.335-8.505-8.505Z"/>
+                            </svg> 
+                        </div>
+                        <div class="mob-nav-item-dropdown">
+                            <a href="#">Sale</a>
+                            <a href="#">Sale</a>
+                            <a href="#">Sale</a>
+                        </div>                               
+                    </div>
+                </div>
+            </div>
+        </div>
+    </head>
+    <!--Main-->
+    <main>
+        <!--Breadcrumbs-->
+        <section class="breadcrumbs">
+            <div class="container">
+                <div class="breadcrumbs-wrapper">
+                    <a href="#">All</a>
+                    <div class="breadcrumb-devider">/</div>
+                    <a href="#">DRESS</a>
+                </div>
+            </div>
+        </section>
+        <!--Item-->
+        <section class="item">
+            <div class="container">
+                <div class="item-title">
+                    <h1>by Marianna Jaime Blazer Dress in Merlot</h1>
+                </div>
+                <div class="item-content row">
+                    <div class="col-lg-6">
+                        <div style="background: url(assets/img/single-item.svg);"
+                        class="item-image">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="43" height="42" fill="none" viewBox="0 0 43 42">
+                            <g clip-path="url(#a)">
+                            <path fill="#69110A" d="m21.767 26.253-.1.099-.11-.099c-4.75-4.227-7.89-7.023-7.89-9.858 0-1.962 1.5-3.433 3.5-3.433 1.54 0 3.04.98 3.57 2.315h1.86c.53-1.334 2.03-2.315 3.57-2.315 2 0 3.5 1.471 3.5 3.433 0 2.835-3.14 5.63-7.9 9.858ZM26.167 11c-1.74 0-3.41.795-4.5 2.04a6.063 6.063 0 0 0-4.5-2.04c-3.08 0-5.5 2.364-5.5 5.395 0 3.698 3.4 6.73 8.55 11.31L21.667 29l1.45-1.295c5.15-4.58 8.55-7.612 8.55-11.31 0-3.031-2.42-5.395-5.5-5.395Z"/>
+                            </g>
+                            <defs>
+                            <clipPath id="a">
+                                <path fill="#fff" d="M11.667 11h20v20h-20z"/>
+                            </clipPath>
+                            </defs>
+                        </svg> 
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="item-text">
+                            <h3>Description</h3>
+                            <div class="item-text-info">
+                                <p>Self: 100% cotton</p>
+                                <p>Lining: 95% cotton, 5% elastane</p>
+                                <p>Made in Turkey</p>
+                                <p>Machine wash</p>
+                                <b>Heavyweight denim fabric</b>
+                                <b>Revolve Style No. FLER-WD95</b>
+                                <b>Manufacturer Style No. DR0550</b>
+                            </div>
+                            <div class="item-text-code">
+                                <p>Product Code: BRDJSSAS_ON12</p>
+                            </div>
+                            <div class="item-text-size">
+                                <div class="item-size-links">
+                                    <p>Size (US):</p>
+                                    <span>Size Guide</span>
+                                    <span>Can't Find Your Size?</span>
+                                </div>
+                                <div class="item-size-buttons">
+                                    <div class="item-size-button">0</div>
+                                    <div class="item-size-button active">2</div>
+                                    <div class="item-size-button">4</div>
+                                    <div class="item-size-button">6</div>
+                                    <div class="item-size-button">8</div>
+                                    <div class="item-size-button">10</div>
+                                </div>
+                            </div>
+                            <div class="item-text-color">
+                                <p>Color:</p>
+                                <div class="item-text-color-item">
+                                    <div style="background-color: #0A0907;"
+                                    class="item-colo-box"></div>
+                                    <span>Black</span>
+                                </div>
+                            </div>
+                            <div class="item-text-price">
+                                $ 1000.00
+                            </div>
+                            <div class="item-buttons">
+                                <button class="item-button-1">ADD TO BAG</button>
+                                <button class="item-button-2">CHECK AVAILABLE IN BOTIQUE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Suggestion-->
+        <section class="suggestion">
+            <div class="container">
+                <div class="suggestion-wrapper">
+                    <div class="suggestion-title">
+                        <h2>Complete The Look</h2>
+                        <div class="suggestion-items row">
+                            <div class="col-xl-3 col-sm-4 col-6">
+                                <div class="suggestion-item">
+                                    <div style="background: url(assets/img/suggestion-item.svg);"
+                                    class="suggestion-item-img">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="43" height="42" fill="none" viewBox="0 0 43 42">
+                                        <g clip-path="url(#a)">
+                                        <path fill="#69110A" d="m21.767 26.253-.1.099-.11-.099c-4.75-4.227-7.89-7.023-7.89-9.858 0-1.962 1.5-3.433 3.5-3.433 1.54 0 3.04.98 3.57 2.315h1.86c.53-1.334 2.03-2.315 3.57-2.315 2 0 3.5 1.471 3.5 3.433 0 2.835-3.14 5.63-7.9 9.858ZM26.167 11c-1.74 0-3.41.795-4.5 2.04a6.063 6.063 0 0 0-4.5-2.04c-3.08 0-5.5 2.364-5.5 5.395 0 3.698 3.4 6.73 8.55 11.31L21.667 29l1.45-1.295c5.15-4.58 8.55-7.612 8.55-11.31 0-3.031-2.42-5.395-5.5-5.395Z"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="a">
+                                            <path fill="#fff" d="M11.667 11h20v20h-20z"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg> 
+                                    </div>
+                                    <div class="suggestion-item-title">
+                                        <p>Double-breasted wool coat</p>
+                                    </div>
+                                    <div class="suggestion-item-price-wrapper">
+                                        <span class="suggestion-item-price">$ 100</span>
+                                        <span class="suggestion-item-sale">25% off</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-sm-4 col-6">
+                                <div class="suggestion-item">
+                                    <div style="background: url(assets/img/suggestion-item.svg);"
+                                    class="suggestion-item-img">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="43" height="42" fill="none" viewBox="0 0 43 42">
+                                        <g clip-path="url(#a)">
+                                        <path fill="#69110A" d="m21.767 26.253-.1.099-.11-.099c-4.75-4.227-7.89-7.023-7.89-9.858 0-1.962 1.5-3.433 3.5-3.433 1.54 0 3.04.98 3.57 2.315h1.86c.53-1.334 2.03-2.315 3.57-2.315 2 0 3.5 1.471 3.5 3.433 0 2.835-3.14 5.63-7.9 9.858ZM26.167 11c-1.74 0-3.41.795-4.5 2.04a6.063 6.063 0 0 0-4.5-2.04c-3.08 0-5.5 2.364-5.5 5.395 0 3.698 3.4 6.73 8.55 11.31L21.667 29l1.45-1.295c5.15-4.58 8.55-7.612 8.55-11.31 0-3.031-2.42-5.395-5.5-5.395Z"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="a">
+                                            <path fill="#fff" d="M11.667 11h20v20h-20z"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg> 
+                                    </div>
+                                    <div class="suggestion-item-title">
+                                        <p>Double-breasted wool coat</p>
+                                    </div>
+                                    <div class="suggestion-item-price-wrapper">
+                                        <span class="suggestion-item-price">$ 100</span>
+                                        <span class="suggestion-item-sale">25% off</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-sm-4 col-6">
+                                <div class="suggestion-item">
+                                    <div style="background: url(assets/img/suggestion-item.svg);"
+                                    class="suggestion-item-img">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="43" height="42" fill="none" viewBox="0 0 43 42">
+                                        <g clip-path="url(#a)">
+                                        <path fill="#69110A" d="m21.767 26.253-.1.099-.11-.099c-4.75-4.227-7.89-7.023-7.89-9.858 0-1.962 1.5-3.433 3.5-3.433 1.54 0 3.04.98 3.57 2.315h1.86c.53-1.334 2.03-2.315 3.57-2.315 2 0 3.5 1.471 3.5 3.433 0 2.835-3.14 5.63-7.9 9.858ZM26.167 11c-1.74 0-3.41.795-4.5 2.04a6.063 6.063 0 0 0-4.5-2.04c-3.08 0-5.5 2.364-5.5 5.395 0 3.698 3.4 6.73 8.55 11.31L21.667 29l1.45-1.295c5.15-4.58 8.55-7.612 8.55-11.31 0-3.031-2.42-5.395-5.5-5.395Z"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="a">
+                                            <path fill="#fff" d="M11.667 11h20v20h-20z"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg> 
+                                    </div>
+                                    <div class="suggestion-item-title">
+                                        <p>Double-breasted wool coat</p>
+                                    </div>
+                                    <div class="suggestion-item-price-wrapper">
+                                        <span class="suggestion-item-price">$ 100</span>
+                                        <span class="suggestion-item-sale">25% off</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-sm-4 col-6">
+                                <div class="suggestion-item">
+                                    <div style="background: url(assets/img/suggestion-item.svg);"
+                                    class="suggestion-item-img">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="43" height="42" fill="none" viewBox="0 0 43 42">
+                                        <g clip-path="url(#a)">
+                                        <path fill="#69110A" d="m21.767 26.253-.1.099-.11-.099c-4.75-4.227-7.89-7.023-7.89-9.858 0-1.962 1.5-3.433 3.5-3.433 1.54 0 3.04.98 3.57 2.315h1.86c.53-1.334 2.03-2.315 3.57-2.315 2 0 3.5 1.471 3.5 3.433 0 2.835-3.14 5.63-7.9 9.858ZM26.167 11c-1.74 0-3.41.795-4.5 2.04a6.063 6.063 0 0 0-4.5-2.04c-3.08 0-5.5 2.364-5.5 5.395 0 3.698 3.4 6.73 8.55 11.31L21.667 29l1.45-1.295c5.15-4.58 8.55-7.612 8.55-11.31 0-3.031-2.42-5.395-5.5-5.395Z"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="a">
+                                            <path fill="#fff" d="M11.667 11h20v20h-20z"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg> 
+                                    </div>
+                                    <div class="suggestion-item-title">
+                                        <p>Double-breasted wool coat</p>
+                                    </div>
+                                    <div class="suggestion-item-price-wrapper">
+                                        <span class="suggestion-item-price">$ 100</span>
+                                        <span class="suggestion-item-sale">25% off</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="suggestion-wrapper">
+                    <div class="suggestion-title">
+                        <h2>Similar items</h2>
+                    </div>
+                    <div class="suggestion-items row">
+                        <div class="col-xl-3 col-sm-4 col-6">
+                            <div class="suggestion-item">
+                                <div style="background: url(assets/img/suggestion-item.svg);"
+                                class="suggestion-item-img">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="43" height="42" fill="none" viewBox="0 0 43 42">
+                                    <g clip-path="url(#a)">
+                                    <path fill="#69110A" d="m21.767 26.253-.1.099-.11-.099c-4.75-4.227-7.89-7.023-7.89-9.858 0-1.962 1.5-3.433 3.5-3.433 1.54 0 3.04.98 3.57 2.315h1.86c.53-1.334 2.03-2.315 3.57-2.315 2 0 3.5 1.471 3.5 3.433 0 2.835-3.14 5.63-7.9 9.858ZM26.167 11c-1.74 0-3.41.795-4.5 2.04a6.063 6.063 0 0 0-4.5-2.04c-3.08 0-5.5 2.364-5.5 5.395 0 3.698 3.4 6.73 8.55 11.31L21.667 29l1.45-1.295c5.15-4.58 8.55-7.612 8.55-11.31 0-3.031-2.42-5.395-5.5-5.395Z"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="a">
+                                        <path fill="#fff" d="M11.667 11h20v20h-20z"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg> 
+                                </div>
+                                <div class="suggestion-item-title">
+                                    <p>Double-breasted wool coat</p>
+                                </div>
+                                <div class="suggestion-item-price-wrapper">
+                                    <span class="suggestion-item-price">$ 100</span>
+                                    <span class="suggestion-item-sale">25% off</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-4 col-6">
+                            <div class="suggestion-item">
+                                <div style="background: url(assets/img/suggestion-item.svg);"
+                                class="suggestion-item-img">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="43" height="42" fill="none" viewBox="0 0 43 42">
+                                    <g clip-path="url(#a)">
+                                    <path fill="#69110A" d="m21.767 26.253-.1.099-.11-.099c-4.75-4.227-7.89-7.023-7.89-9.858 0-1.962 1.5-3.433 3.5-3.433 1.54 0 3.04.98 3.57 2.315h1.86c.53-1.334 2.03-2.315 3.57-2.315 2 0 3.5 1.471 3.5 3.433 0 2.835-3.14 5.63-7.9 9.858ZM26.167 11c-1.74 0-3.41.795-4.5 2.04a6.063 6.063 0 0 0-4.5-2.04c-3.08 0-5.5 2.364-5.5 5.395 0 3.698 3.4 6.73 8.55 11.31L21.667 29l1.45-1.295c5.15-4.58 8.55-7.612 8.55-11.31 0-3.031-2.42-5.395-5.5-5.395Z"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="a">
+                                        <path fill="#fff" d="M11.667 11h20v20h-20z"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg> 
+                                </div>
+                                <div class="suggestion-item-title">
+                                    <p>Double-breasted wool coat</p>
+                                </div>
+                                <div class="suggestion-item-price-wrapper">
+                                    <span class="suggestion-item-price">$ 100</span>
+                                    <span class="suggestion-item-sale">25% off</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-4 col-6">
+                            <div class="suggestion-item">
+                                <div style="background: url(assets/img/suggestion-item.svg);"
+                                class="suggestion-item-img">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="43" height="42" fill="none" viewBox="0 0 43 42">
+                                    <g clip-path="url(#a)">
+                                    <path fill="#69110A" d="m21.767 26.253-.1.099-.11-.099c-4.75-4.227-7.89-7.023-7.89-9.858 0-1.962 1.5-3.433 3.5-3.433 1.54 0 3.04.98 3.57 2.315h1.86c.53-1.334 2.03-2.315 3.57-2.315 2 0 3.5 1.471 3.5 3.433 0 2.835-3.14 5.63-7.9 9.858ZM26.167 11c-1.74 0-3.41.795-4.5 2.04a6.063 6.063 0 0 0-4.5-2.04c-3.08 0-5.5 2.364-5.5 5.395 0 3.698 3.4 6.73 8.55 11.31L21.667 29l1.45-1.295c5.15-4.58 8.55-7.612 8.55-11.31 0-3.031-2.42-5.395-5.5-5.395Z"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="a">
+                                        <path fill="#fff" d="M11.667 11h20v20h-20z"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg> 
+                                </div>
+                                <div class="suggestion-item-title">
+                                    <p>Double-breasted wool coat</p>
+                                </div>
+                                <div class="suggestion-item-price-wrapper">
+                                    <span class="suggestion-item-price">$ 100</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-4 col-6">
+                            <div class="suggestion-item">
+                                <div style="background: url(assets/img/suggestion-item.svg);"
+                                class="suggestion-item-img">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="43" height="42" fill="none" viewBox="0 0 43 42">
+                                    <g clip-path="url(#a)">
+                                    <path fill="#69110A" d="m21.767 26.253-.1.099-.11-.099c-4.75-4.227-7.89-7.023-7.89-9.858 0-1.962 1.5-3.433 3.5-3.433 1.54 0 3.04.98 3.57 2.315h1.86c.53-1.334 2.03-2.315 3.57-2.315 2 0 3.5 1.471 3.5 3.433 0 2.835-3.14 5.63-7.9 9.858ZM26.167 11c-1.74 0-3.41.795-4.5 2.04a6.063 6.063 0 0 0-4.5-2.04c-3.08 0-5.5 2.364-5.5 5.395 0 3.698 3.4 6.73 8.55 11.31L21.667 29l1.45-1.295c5.15-4.58 8.55-7.612 8.55-11.31 0-3.031-2.42-5.395-5.5-5.395Z"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="a">
+                                        <path fill="#fff" d="M11.667 11h20v20h-20z"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg> 
+                                </div>
+                                <div class="suggestion-item-title">
+                                    <p>Double-breasted wool coat</p>
+                                </div>
+                                <div class="suggestion-item-price-wrapper">
+                                    <span class="suggestion-item-price">$ 100</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-4 col-6">
+                            <div class="suggestion-item">
+                                <div style="background: url(assets/img/suggestion-item.svg);"
+                                class="suggestion-item-img">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="43" height="42" fill="none" viewBox="0 0 43 42">
+                                    <g clip-path="url(#a)">
+                                    <path fill="#69110A" d="m21.767 26.253-.1.099-.11-.099c-4.75-4.227-7.89-7.023-7.89-9.858 0-1.962 1.5-3.433 3.5-3.433 1.54 0 3.04.98 3.57 2.315h1.86c.53-1.334 2.03-2.315 3.57-2.315 2 0 3.5 1.471 3.5 3.433 0 2.835-3.14 5.63-7.9 9.858ZM26.167 11c-1.74 0-3.41.795-4.5 2.04a6.063 6.063 0 0 0-4.5-2.04c-3.08 0-5.5 2.364-5.5 5.395 0 3.698 3.4 6.73 8.55 11.31L21.667 29l1.45-1.295c5.15-4.58 8.55-7.612 8.55-11.31 0-3.031-2.42-5.395-5.5-5.395Z"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="a">
+                                        <path fill="#fff" d="M11.667 11h20v20h-20z"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg> 
+                                </div>
+                                <div class="suggestion-item-title">
+                                    <p>Double-breasted wool coat</p>
+                                </div>
+                                <div class="suggestion-item-price-wrapper">
+                                    <span class="suggestion-item-price">$ 100</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-4 col-6">
+                            <div class="suggestion-item">
+                                <div style="background: url(assets/img/suggestion-item.svg);"
+                                class="suggestion-item-img">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="43" height="42" fill="none" viewBox="0 0 43 42">
+                                    <g clip-path="url(#a)">
+                                    <path fill="#69110A" d="m21.767 26.253-.1.099-.11-.099c-4.75-4.227-7.89-7.023-7.89-9.858 0-1.962 1.5-3.433 3.5-3.433 1.54 0 3.04.98 3.57 2.315h1.86c.53-1.334 2.03-2.315 3.57-2.315 2 0 3.5 1.471 3.5 3.433 0 2.835-3.14 5.63-7.9 9.858ZM26.167 11c-1.74 0-3.41.795-4.5 2.04a6.063 6.063 0 0 0-4.5-2.04c-3.08 0-5.5 2.364-5.5 5.395 0 3.698 3.4 6.73 8.55 11.31L21.667 29l1.45-1.295c5.15-4.58 8.55-7.612 8.55-11.31 0-3.031-2.42-5.395-5.5-5.395Z"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="a">
+                                        <path fill="#fff" d="M11.667 11h20v20h-20z"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg> 
+                                </div>
+                                <div class="suggestion-item-title">
+                                    <p>Double-breasted wool coat</p>
+                                </div>
+                                <div class="suggestion-item-price-wrapper">
+                                    <span class="suggestion-item-price">$ 100</span>
+                                    <span class="suggestion-item-sale">25% off</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-4 col-6">
+                            <div class="suggestion-item">
+                                <div style="background: url(assets/img/suggestion-item.svg);"
+                                class="suggestion-item-img">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="43" height="42" fill="none" viewBox="0 0 43 42">
+                                    <g clip-path="url(#a)">
+                                    <path fill="#69110A" d="m21.767 26.253-.1.099-.11-.099c-4.75-4.227-7.89-7.023-7.89-9.858 0-1.962 1.5-3.433 3.5-3.433 1.54 0 3.04.98 3.57 2.315h1.86c.53-1.334 2.03-2.315 3.57-2.315 2 0 3.5 1.471 3.5 3.433 0 2.835-3.14 5.63-7.9 9.858ZM26.167 11c-1.74 0-3.41.795-4.5 2.04a6.063 6.063 0 0 0-4.5-2.04c-3.08 0-5.5 2.364-5.5 5.395 0 3.698 3.4 6.73 8.55 11.31L21.667 29l1.45-1.295c5.15-4.58 8.55-7.612 8.55-11.31 0-3.031-2.42-5.395-5.5-5.395Z"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="a">
+                                        <path fill="#fff" d="M11.667 11h20v20h-20z"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg> 
+                                </div>
+                                <div class="suggestion-item-title">
+                                    <p>Double-breasted wool coat</p>
+                                </div>
+                                <div class="suggestion-item-price-wrapper">
+                                    <span class="suggestion-item-price">$ 100</span>
+                                    <span class="suggestion-item-sale">25% off</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-4 col-6">
+                            <div class="suggestion-item">
+                                <div style="background: url(assets/img/suggestion-item.svg);"
+                                class="suggestion-item-img">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="43" height="42" fill="none" viewBox="0 0 43 42">
+                                    <g clip-path="url(#a)">
+                                    <path fill="#69110A" d="m21.767 26.253-.1.099-.11-.099c-4.75-4.227-7.89-7.023-7.89-9.858 0-1.962 1.5-3.433 3.5-3.433 1.54 0 3.04.98 3.57 2.315h1.86c.53-1.334 2.03-2.315 3.57-2.315 2 0 3.5 1.471 3.5 3.433 0 2.835-3.14 5.63-7.9 9.858ZM26.167 11c-1.74 0-3.41.795-4.5 2.04a6.063 6.063 0 0 0-4.5-2.04c-3.08 0-5.5 2.364-5.5 5.395 0 3.698 3.4 6.73 8.55 11.31L21.667 29l1.45-1.295c5.15-4.58 8.55-7.612 8.55-11.31 0-3.031-2.42-5.395-5.5-5.395Z"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="a">
+                                        <path fill="#fff" d="M11.667 11h20v20h-20z"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg> 
+                                </div>
+                                <div class="suggestion-item-title">
+                                    <p>Double-breasted wool coat</p>
+                                </div>
+                                <div class="suggestion-item-price-wrapper">
+                                    <span class="suggestion-item-price">$ 100</span>
+                                    <span class="suggestion-item-sale">25% off</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="suggestion-more-button">
+                            <p>Show more</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="suggestion-wrapper">
+                    <div class="suggestion-title">
+                        <h2>Recently viewed</h2>
+                    </div>
+                    <div class="suggestion-items row">
+                        <div class="col-xl-3 col-sm-4 col-6">
+                            <div class="suggestion-item">
+                                <div style="background: url(assets/img/suggestion-item.svg);"
+                                class="suggestion-item-img">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="43" height="42" fill="none" viewBox="0 0 43 42">
+                                    <g clip-path="url(#a)">
+                                    <path fill="#69110A" d="m21.767 26.253-.1.099-.11-.099c-4.75-4.227-7.89-7.023-7.89-9.858 0-1.962 1.5-3.433 3.5-3.433 1.54 0 3.04.98 3.57 2.315h1.86c.53-1.334 2.03-2.315 3.57-2.315 2 0 3.5 1.471 3.5 3.433 0 2.835-3.14 5.63-7.9 9.858ZM26.167 11c-1.74 0-3.41.795-4.5 2.04a6.063 6.063 0 0 0-4.5-2.04c-3.08 0-5.5 2.364-5.5 5.395 0 3.698 3.4 6.73 8.55 11.31L21.667 29l1.45-1.295c5.15-4.58 8.55-7.612 8.55-11.31 0-3.031-2.42-5.395-5.5-5.395Z"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="a">
+                                        <path fill="#fff" d="M11.667 11h20v20h-20z"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg> 
+                                </div>
+                                <div class="suggestion-item-title">
+                                    <p>Double-breasted wool coat</p>
+                                </div>
+                                <div class="suggestion-item-price-wrapper">
+                                    <span class="suggestion-item-price">$ 100</span>
+                                    <span class="suggestion-item-sale">25% off</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Discover-->
+        <section class="discover">
+            <div class="container">
+                <div class="discover-title">
+                    <h2>Discover more</h2>
+                </div>
+                <div class="discover-items">
+                    <a href="#">
+                        Denim Dresses
+                    </a>
+                    <a href="#">
+                        Mini Dresses
+                    </a>
+                    <a href="#">
+                        Long Sleeve Dresses
+                    </a>
+                    <a href="#">
+                        Casual Dresses
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!--Info-->
+        <section class="info">
+            <div class="container">
+                <div class="info-items-wrapper row">
+                    <div class="col-xl-4">
+                        <div class="info-item">
+                            <h3>Lorem ipsum</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="info-item">
+                            <h3>E-MAIL</h3>
+                            <a href="#">italica@sales.com</a>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="info-item" style="border: none;">
+                            <h3>Shipping</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis</p>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--Footer-->
+    <footer>
+        <div class="container">
+            <div class="footer-content-wrapper">
+                <div class="footer-col footer-first-col">
+                    <img src="assets/img/footer-logo.svg" class="footer-logo" alt="logo">
+                    <p>We have clothes that suits your style and which you’re proud to wear for women.</p>
+                    <div class="footer-buttons">
+                        <a href="#">
+                            <div class="footer-button footer-btn-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15" fill="none" viewBox="0 0 18 15">
+                                    <path fill="#323232" d="M17.312 2.474a7.654 7.654 0 0 1-1.99.558c.698-.419 1.256-1.082 1.5-1.885a7.566 7.566 0 0 1-2.2.838A3.48 3.48 0 0 0 12.11.902a3.428 3.428 0 0 0-3.422 3.422c0 .28.035.524.105.769a9.784 9.784 0 0 1-7.089-3.597c-.28.524-.454 1.082-.454 1.711A3.42 3.42 0 0 0 2.786 6.07a4.04 4.04 0 0 1-1.572-.419v.035a3.45 3.45 0 0 0 2.759 3.387c-.28.07-.594.105-.908.105-.21 0-.454-.035-.664-.07.454 1.362 1.711 2.375 3.213 2.375-1.187.907-2.654 1.466-4.26 1.466-.28 0-.559 0-.803-.035a9.717 9.717 0 0 0 5.272 1.537c6.32 0 9.778-5.238 9.778-9.777V4.22a6.272 6.272 0 0 0 1.71-1.746Z"/>
+                                </svg>  
+                            </div>                         
+                        </a>
+                        <a href="#">
+                            <div class="footer-button footer-btn-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="19" fill="none" viewBox="0 0 11 19">
+                                    <path fill="#323232" d="M3.708 18.318v-8.293H.917V6.793h2.79V4.41c0-2.766 1.69-4.272 4.157-4.272 1.182 0 2.198.088 2.494.127v2.89l-1.711.001c-1.342 0-1.602.638-1.602 1.574v2.063h3.2l-.416 3.232H7.045v8.293H3.708Z"/>
+                                </svg>  
+                            </div>                                
+                        </a>
+                        <a href="#">
+                            <div class="footer-button footer-btn-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" fill="none" viewBox="0 0 21 22">
+                                    <path fill="#323232" d="M10.462 2.67c2.713 0 3.034.011 4.106.06a5.637 5.637 0 0 1 1.887.35 3.364 3.364 0 0 1 1.929 1.928c.224.605.342 1.243.35 1.887.048 1.072.059 1.394.059 4.107s-.01 3.034-.06 4.106a5.635 5.635 0 0 1-.349 1.887 3.364 3.364 0 0 1-1.929 1.929 5.638 5.638 0 0 1-1.887.35c-1.071.048-1.392.058-4.106.058-2.713 0-3.035-.01-4.106-.059a5.638 5.638 0 0 1-1.887-.35 3.366 3.366 0 0 1-1.929-1.928 5.636 5.636 0 0 1-.35-1.887c-.048-1.072-.059-1.393-.059-4.106s.01-3.035.06-4.107a5.637 5.637 0 0 1 .35-1.887A3.365 3.365 0 0 1 4.468 3.08a5.637 5.637 0 0 1 1.887-.35c1.072-.049 1.393-.06 4.106-.06Zm0-1.83c-2.758 0-3.105.01-4.19.06a7.46 7.46 0 0 0-2.467.473 4.977 4.977 0 0 0-1.799 1.172 4.978 4.978 0 0 0-1.173 1.8 7.46 7.46 0 0 0-.472 2.468C.312 7.896.3 8.243.3 11s.011 3.106.06 4.19a7.46 7.46 0 0 0 .473 2.467 4.977 4.977 0 0 0 1.172 1.8 4.978 4.978 0 0 0 1.8 1.172 7.46 7.46 0 0 0 2.468.472c1.084.049 1.43.061 4.189.061 2.76 0 3.106-.011 4.19-.06a7.46 7.46 0 0 0 2.467-.473 5.202 5.202 0 0 0 2.971-2.973c.296-.79.456-1.624.472-2.467.049-1.083.06-1.43.06-4.189 0-2.758-.011-3.105-.06-4.19a7.46 7.46 0 0 0-.473-2.467 4.978 4.978 0 0 0-1.172-1.8 4.978 4.978 0 0 0-1.8-1.172A7.46 7.46 0 0 0 14.651.9C13.567.85 13.22.84 10.461.84Z"/>
+                                    <path fill="#323232" d="M10.464 5.785a5.218 5.218 0 1 0 0 10.436 5.218 5.218 0 0 0 0-10.436Zm0 8.605a3.387 3.387 0 1 1 0-6.774 3.387 3.387 0 0 1 0 6.774Zm5.423-7.593a1.22 1.22 0 1 0 0-2.439 1.22 1.22 0 0 0 0 2.44Z"/>
+                                </svg>   
+                            </div>                                                           
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h6>Locate us</h6>
+                    <p>487 Eighth Avenue West Street, New York</p>
+                    <p>Phone: 0035265244</p>
+                    <p>E-mail: italica@example.com</p>
+                </div>
+                <div class="footer-col footer-def-col">
+                    <h6>Information</h6>
+                    <a href="#">About Us</a>
+                    <a href="#">FAQ page</a>
+                    <a href="#">Contact us</a>
+                    <a href="#">Work with us</a>
+                    <a href="#">Offices</a>
+                </div>
+                <div class="footer-col footer-def-col">
+                    <h6>Discover</h6>
+                    <a href="#">Categories</a>
+                    <a href="#">Sale</a>
+                    <a href="#">New in</a>
+                    <a href="#">Delivery</a>
+                </div>
+                <div class="footer-col footer-def-col">
+                    <h6>Connect</h6>
+                    <a href="#">Follow Us On Instagram</a>
+                    <a href="#">Add to Facebook</a>
+                    <a href="#">Pinterest</a>
+                    <a href="#">Follow us on X.com</a>
+                    <a href="#">Google</a>
+                </div>
+            </div>      
+        </div>
+        <div class="footer-devider"></div>
+        <div class="container">
+            <div class="footer-lower">
+                <div class="footer-copy">
+                    <p>© 2025, Italica</p>
+                    <p>CA Transparency in Supply Chains Act</p>
+                </div>
+                <div class="footer-lower-links">
+                    <a href="#">Legal Notice</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Website Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/sliders.js"></script>
+    <script src="assets/js/nav.js"></script>
+    <script src="assets/js/item.js"></script>
+</body>
+</html>
