@@ -595,4 +595,7 @@
     .filter-cost-input {
         height: 42px;
     }
+    .top-nav {
+        margin-bottom: 0;
+    }
 }

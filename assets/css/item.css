@@ -46,11 +46,13 @@
     height: 771px;
     background-position: center !important;
     background-size: cover !important;
-    background-repeat: no-repeat !important;
-    display: flex;
+    background-repeat: no-repeat !important;  
     justify-content: flex-end;
     padding-top: 40px;
     padding-right: 40px;
+}
+.slick-initialized .item-image {
+    display: flex;
 }
 .item-image svg {
     cursor: pointer;
@@ -245,13 +247,14 @@
     cursor: pointer;
     height: fit-content;
 }
-.suggestion-item-title p{
+.suggestion-item-title a{
     font-family: 'SourceSansPro';
     margin-bottom: 10px;
     font-size: 28px;
     font-weight: 400;
     line-height: 35.2px;
     color: #323232;
+    text-decoration: none;
 }
 .suggestion-title h2{
     font-family: 'SourceSansPro';
@@ -350,6 +353,183 @@
 }
 
 
+
+
+.item-slider .slick-dots {
+    bottom: -16px;
+}
+.item-mob-content {
+    margin-bottom: 20px;
+}
+.item-mob-content h1 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.5px;
+    color: #323232;
+    text-align: center;
+    margin-bottom: 8px;
+}
+.item-mob-price {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.38px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+.item-mob-price p {
+    margin-bottom: 0;
+    font-family: 'SourceSansPro';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.6px;
+    color: #A4A4A4;
+}
+
+.custom-select-wrapper {
+    position: relative;
+    width: 50%;
+    height: 51px;
+  }
+  
+  .hidden-select {
+    display: none;
+  }
+  
+  .custom-select {
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .custom-select-trigger {
+    background: #fff;
+    border: 1px solid #323232;
+    border-radius: 0px;
+    padding: 10px;
+    text-align: left;
+    height: 51px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+  .custom-select-trigger p{
+    font-family: 'SourceSansPro';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16.8px;
+    margin-bottom: 0;
+    color: #323232;
+  }
+  .custom-select-trigger span {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22.4px;
+    color: #323232;
+  }
+  .custom-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border: 1px solid #323232;
+    border-radius: 0px;
+    margin-top: 5px;
+    display: none;
+    z-index: 10;
+  }
+  
+  .custom-option {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .custom-option:hover {
+    background: #f0f0f0;
+  }
+  
+  .custom-select.open .custom-options {
+    display: flex;
+    flex-direction: column;
+  }
+.item-mob-selects {
+    display: flex;
+    align-items: center;
+}
+.custom-select-trigger svg {
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    margin-top: 4px;
+}
+.item-mob-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 16px;
+}
+.item-mob-button-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 42px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.5px; 
+    background: #151515;
+    color: #fff;
+    border: 1px solid #151515;
+    transition: .3s;
+    outline: 0;
+}
+.item-mob-button-1:hover {
+    color: #151515;
+    background: #fff;
+}
+.item-mob-button-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 42px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.5px;
+    color: #151515;
+    background: #fff;
+    border: 1px solid #151515;
+    transition: .3s;
+    outline: 0;
+}
+.item-mob-button-2:hover {
+    background: #151515;
+    color: #fff;
+}
+.items-mob-button-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 42px;
+    width: 100%;
+    font-family: 'SourceSansPro';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.11px;
+    color: #323232;
+    background: #fff;
+    border: 0;
+    outline: 0;
+}
+
+
+
 @media (min-width: 1920px) {
 
 }
@@ -360,22 +540,104 @@
     .suggestion-item-img {
         height: 420px;
     }
+    .item-image {
+        height: 600px;
+    }
 }
 @media (max-width: 1440px){
 
-    .suggestion-item-img {
-        height: 350px;
+
+    .suggestion-item-title a {
+        font-size: 22px;
+        line-height: 22px;
     }
 }
 @media (max-width: 1200px){
+    .suggestion-item-price {
+        font-size: 22px;
+        line-height: 22px;
+    }
+    .suggestion-item-sale {
+        font-size: 22px;
+        line-height: 22px;
+    }
 }
 @media (max-width: 992px){
-    
+    .suggestion-item-img {
+        height: 300px;
+    }
+    .item-image {
+        margin-bottom: 8px;
+    }
+    .item-slider .slick-dots {
+        bottom: -8px;
+    }
+    .items-desc-title {
+        display: none;
+    }
+    .item-title {
+        display: none;
+    }
+    .item-content .col-12:first-child {
+        padding: 0;
+    }
+    .breadcrumbs {
+        display: none;
+    }
+    .item-text-size {
+        display: none;
+    }
+    .item-text-color {
+        display: none;
+    }
+    .item-text-price {
+        display: none;
+    }
+    .item-buttons {
+        display: none;
+    }
+    .item {
+        margin-bottom: 0;
+    }
+    .item-text {
+        padding-left: 0;
+    }
+    .suggestion-title h2 { 
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29.26px;
+    }
+    .discover-title h2 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29.26px;
+    }
+    .suggestion-item-title a {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 14.63px;
+    }
+    .suggestion-item-price.active {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 14.63px;
+    }
+    .suggestion-item-price{
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .suggestion-item-sale {
+        font-size: 12px;
+        line-height: 14px;
+    }
 }
 @media (max-width: 768px){
     .suggestion-item-img {
-        height: 213px;
+        height: 280px;
         padding: 0;
         margin-bottom: 10px;
+    }
+    .top-nav {
+        margin-bottom: 0;
     }
 }

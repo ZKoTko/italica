@@ -92,3 +92,16 @@ $('.sales-slider').slick({
     
 });
 
+
+
+$('.item-slider').slick({
+  arrows: false,
+  dots: true,
+  infinite: true,
+  slidesToShow: 1, 
+  slidesToScroll: 1,
+  customPaging: function (slider, i) {
+    return '<button class="custom-dot" data-slide="' + i + '">' + '</button>';
+  }
+});
+
