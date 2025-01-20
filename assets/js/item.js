@@ -61,4 +61,16 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
   });
+
   
+  document.querySelector('.item-button-1').addEventListener('click', function () {
+    const itemContent = document.querySelector('.item-content');
+    const itemContentAdded = document.querySelector('.item-content-added');
+    const itemTitle = document.querySelector('.item-title');
+
+    // Добавляем/удаляем классы
+    itemContent.classList.add('hidden');
+    itemContentAdded.classList.remove('hidden');
+    itemContentAdded.classList.add('visible');
+    itemTitle.classList.add('hidden'); // Скрываем заголовок
+  });
