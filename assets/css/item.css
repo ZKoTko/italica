@@ -393,19 +393,19 @@
     position: relative;
     width: 50%;
     height: 51px;
-  }
+}
   
-  .hidden-select {
+.hidden-select {
     display: none;
-  }
+}
   
-  .custom-select {
+.custom-select {
     position: relative;
     cursor: pointer;
     user-select: none;
-  }
+}
   
-  .custom-select-trigger {
+.custom-select-trigger {
     background: #fff;
     border: 1px solid #323232;
     border-radius: 0px;
@@ -416,22 +416,22 @@
     flex-direction: column;
     justify-content: center;
     position: relative;
-  }
-  .custom-select-trigger p{
+}
+.custom-select-trigger p{
     font-family: 'SourceSansPro';
     font-size: 12px;
     font-weight: 400;
     line-height: 16.8px;
     margin-bottom: 0;
     color: #323232;
-  }
-  .custom-select-trigger span {
+}
+.custom-select-trigger span {
     font-size: 16px;
     font-weight: 700;
     line-height: 22.4px;
     color: #323232;
-  }
-  .custom-options {
+}
+.custom-options {
     position: absolute;
     top: 100%;
     left: 0;
@@ -442,21 +442,21 @@
     margin-top: 5px;
     display: none;
     z-index: 10;
-  }
+}
   
-  .custom-option {
+.custom-option {
     padding: 10px;
     cursor: pointer;
-  }
+}
   
-  .custom-option:hover {
+.custom-option:hover {
     background: #f0f0f0;
-  }
+}
   
-  .custom-select.open .custom-options {
+.custom-select.open .custom-options {
     display: flex;
     flex-direction: column;
-  }
+}
 .item-mob-selects {
     display: flex;
     align-items: center;
