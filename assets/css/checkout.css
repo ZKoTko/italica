@@ -649,7 +649,7 @@
     margin-bottom: 0;
 }
 .checkout-card-form-dates-selects .custom-options {
-    max-height: 400px;
+    max-height: 220px;
     overflow-y: scroll;
 }
 
