@@ -527,7 +527,7 @@
         margin-bottom: 16px;
     }
     .catalog-item-image {
-        height: 213px;
+        height: 280px;
         padding: 0;
         margin-bottom: 10px;
     }
@@ -597,5 +597,17 @@
     }
     .top-nav {
         margin-bottom: 0;
+    }
+}
+
+@media (max-width: 575px) {
+    .catalog-item-image {
+        height: 213px;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+    .catalog-items-wrapper {
+        max-width: 330px;
+        margin: 0 auto;
     }
 }
