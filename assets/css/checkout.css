@@ -648,7 +648,10 @@
     line-height: 30.17px;
     margin-bottom: 0;
 }
-
+.checkout-card-form-dates-selects .custom-options {
+    max-height: 400px;
+    overflow-y: scroll;
+}
 
 
 @media (max-width: 1200px){
