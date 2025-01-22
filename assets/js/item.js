@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
         customSelect.classList.remove("open");
       });
     }
-  });
+});
 
   
   document.querySelector('.item-button-1').addEventListener('click', function () {

@@ -256,7 +256,7 @@
             <div class="container">
                 <div class="checkout-content row">
                     <div class="col-xl-6 col-12">
-                        <div class="checkout-forms-content" id="checkout-forms-content-1">
+                        <div class="checkout-forms-content active" id="checkout-forms-content-1">
                             <h2 class="checkout-forms-content-h2-first">Enter shipping address</h2>
                             <h4 class="checkout-subtitle">Enter Your Shipping Address:</h4>
                             <div class="checkout-form-1">
@@ -326,8 +326,178 @@
                                         </label> 
                                         <p>Be the first to know about new arrivals, sales & promos by submitting your email! You can opt out at any time. <a href="#">privacy policy</a></p>
                                     </div>
-                                    <button class="checkout-form-1-btn">Save and continue</button>
+                                    <button class="checkout-form-1-btn" id="checkout-btn-1-1">Save and continue</button>
                                 </form>
+                            </div>
+                        </div>
+                        <div class="checkout-forms-content hidden" id="checkout-forms-content-2">
+                            <h2>Select Delivery Method</h2>
+                            <div class="checkout-forms-content-2-info">
+                                <div class="checkout-forms-content-2-info-title">Ship to</div>
+                                <p>Didar Mamedov</p>
+                                <p>Turkmenistan, Dashoguz</p>                   
+                                <p>Turkmenistan, Ashgabat</p>
+                                <p>Ashgabat, Ahal velayat 62</p>
+                                <p>Turkmenistan</p>
+                                <button class="checkout-forms-content-2-info-btn">edit</button>
+                            </div>
+                            <div class="checkout-forms-content-2-delivery">
+                                <h3>Delivery Options</h3>
+                                <div class="checkout-forms-content-2-inner active">
+                                    <div class="checkout-forms-content-2-delivery-item" onclick="selectRadio('radio1', this)">
+                                        <div class="checkout-forms-content-2-delivery-check">
+                                            <label class="custom-radio">
+                                                <input type="radio" id="radio1" name="group" value="box1">
+                                                <span></span>
+                                            </label>
+                                        </div>
+                                        <div class="checkout-forms-content-2-delivery-text">
+                                            <h6>Express Shipping</h6>
+                                            <p>Expected: Thursday, Nov 21 - Tuesday, Nov 26</p>
+                                            <h6>FREE</h6>
+                                            <h6>Import Fees may be due upon delivery</h6>
+                                        </div>
+                                    </div>
+                                    <div class="checkout-forms-content-2-delivery-item"  onclick="selectRadio('radio2', this)">
+                                        <div class="checkout-forms-content-2-delivery-check">
+                                            <label class="custom-radio">
+                                                <input type="radio" id="radio2" name="group" value="box2">
+                                                <span></span>
+                                            </label>
+                                        </div>
+                                        <div class="checkout-forms-content-2-delivery-text">
+                                            <h6>Postal Priority</h6>
+                                            <p>Expected: Tuesday, Dec 03 - Tuesday, Dec 10</p>
+                                            <h6>FREE</h6>
+                                            <h6>Import Fees may be due upon delivery</h6>
+                                        </div>
+                                    </div>
+                                    <button class="checkout-forms-content-2-inner-btn">
+                                        Save and continue
+                                    </button>
+                                </div>       
+                                <div class="checkout-forms-content-3-inner hidden">
+                                    <div class="accordion">
+                                        <div class="accordion-item" onclick="selectRadio('radio3', this)">
+                                            <div class="accordion-item-header">
+                                                <label class="custom-radio">
+                                                    <input type="radio" id="radio3" name="group" value="box1">
+                                                    <span></span>
+                                                </label>
+                                                <div class="accordion-item-header-text">
+                                                    <p>Pay with a Credit/Debit Card</p>
+                                                    <span>VISA, MC, AMEX, JCB, DISCOVER</span>
+                                                </div> 
+                                            </div>
+                                            <div class="accordion-item-body">
+                                            <div class="accordion-item-body-content">
+                                                <div class="checkout-card-form">
+                                                    <form>
+                                                        <label>Name</label>
+                                                        <input type="text" class="checkout-card-name-input">
+                                                        <label>Card number</label>
+                                                        <input type="number">
+                                                        <div class="checkout-card-form-wrap">
+                                                            <div class="checkout-card-form-dates">
+                                                                <p>VALID TILL (MM/YY)</p>
+                                                                <div class="checkout-card-form-dates-selects">
+                                                                    <div class="custom-select-wrapper">
+                                                                        <div class="custom-select">
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" fill="none" viewBox="0 0 24 25">
+                                                                                <path fill="#323232" d="m12.075 15.77 8.34-8.49 1.335 1.305-8.385 8.565a1.771 1.771 0 0 1-1.29.585 1.696 1.696 0 0 1-1.275-.585L2.25 8.6l1.32-1.335 8.505 8.505Z"/>
+                                                                            </svg>   
+                                                                          <div class="custom-select-trigger">
+                                                                            <span>MM</span>                                                                       
+                                                                          </div>
+                                                                          <div class="custom-options">
+                                                                            <span class="custom-option" data-value="option1">01</span>
+                                                                            <span class="custom-option" data-value="option2">02</span>
+                                                                            <span class="custom-option" data-value="option3">03</span>
+                                                                            <span class="custom-option" data-value="option4">04</span>
+                                                                            <span class="custom-option" data-value="option5">05</span>
+                                                                            <span class="custom-option" data-value="option6">06</span>
+                                                                            <span class="custom-option" data-value="option7">07</span>
+                                                                            <span class="custom-option" data-value="option8">08</span>
+                                                                            <span class="custom-option" data-value="option9">09</span>
+                                                                            <span class="custom-option" data-value="option10">10</span>
+                                                                            <span class="custom-option" data-value="option11">11</span>
+                                                                            <span class="custom-option" data-value="option12">12</span>
+                                                                          </div>
+                                                                        </div>
+                                                                        <select class="hidden-select">
+                                                                          <option value="option1">01</option>
+                                                                          <option value="option2">02</option>
+                                                                          <option value="option3">03</option>
+                                                                          <option value="option4">04</option>
+                                                                          <option value="option5">05</option>
+                                                                          <option value="option6">06</option>
+                                                                          <option value="option7">07</option>
+                                                                          <option value="option8">08</option>
+                                                                          <option value="option9">09</option>
+                                                                          <option value="option10">10</option>
+                                                                          <option value="option11">11</option>
+                                                                          <option value="option12">12</option>
+                                                                        </select>
+                                                                    </div> 
+                                                                    <div class="custom-select-wrapper">
+                                                                        <div class="custom-select">
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" fill="none" viewBox="0 0 24 25">
+                                                                                <path fill="#323232" d="m12.075 15.77 8.34-8.49 1.335 1.305-8.385 8.565a1.771 1.771 0 0 1-1.29.585 1.696 1.696 0 0 1-1.275-.585L2.25 8.6l1.32-1.335 8.505 8.505Z"/>
+                                                                              </svg> 
+                                                                          <div class="custom-select-trigger">
+                                                                            <span>YY</span>                                                                          
+                                                                          </div>
+                                                                          <div class="custom-options">
+                                                                            <span class="custom-option" data-value="option1">2025</span>
+                                                                            <span class="custom-option" data-value="option2">2026</span>
+                                                                            <span class="custom-option" data-value="option3">2027</span>
+                                                                          </div>
+                                                                        </div>
+                                                                        <select class="hidden-select">
+                                                                          <option value="option1">2025</option>
+                                                                          <option value="option2">2026</option>
+                                                                          <option value="option3">2027</option>
+                                                                        </select>
+                                                                    </div> 
+                                                                </div>
+                                                            </div>
+                                                            <div class="checkout-card-form-svv">
+                                                                <p>SECURITY CODE <span>(details)</span></p>
+                                                                <input type="number">
+                                                            </div>
+                                                        </div>
+                                                        <div class="checkout-card-billing">
+                                                            <h5>Billing Address</h5>
+                                                            <div class="checkout-card-billing-item">
+                                                                <label class="custom-checkbox">
+                                                                    <input type="checkbox" class="custom-checkbox-input" required>
+                                                                    <span class="custom-checkbox-box"></span>
+                                                                </label>
+                                                                <p>Billing address same as shipping</p>
+                                                            </div>
+                                                            <p>Didar Mamedov <br>
+                                                            Turkmenistan, Dashoguz <br>
+                                                            Turkmenistan, Ashgabat <br>
+                                                            Ashgabat, Ahal velayat 62 <br>
+                                                            Turkmenistan
+                                                            </p>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>     
+                                        <div class="accordion-item" onclick="selectRadio('radio4', this)">
+                                            <div class="accordion-item-header">
+                                                <label class="custom-radio">
+                                                    <input type="radio" id="radio4" name="group" value="box1">
+                                                    <span></span>
+                                                </label>
+                                                <p>Pay with Paypal</p>
+                                            </div>
+                                        </div>        
+                                    </div>                                
+                                </div> 
                             </div>
                         </div>
                     </div>
@@ -386,17 +556,6 @@
                                 </div>                    
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="checkout-forms-content hidden" id="checkout-forms-content-2">
-                    <h2>Select Delivery Method</h2>
-                    <div class="checkout-forms-content-2-info">
-                        <div class="checkout-forms-content-2-info-title">Ship to</div>
-                        <p>Didar Mamedov</p>
-                        <p>Turkmenistan, Dashoguz</p>                   
-                        <p>Turkmenistan, Ashgabat</p>
-                        <p>Ashgabat, Ahal velayat 62</p>
-                        <p>Turkmenistan</p>
                     </div>
                 </div>
             </div>
